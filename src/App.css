@@ -1,0 +1,325 @@
+
+#task-d-error {
+    text-align: center;
+    margin: 0;
+    font-size: 15.5px;
+    padding-top: 10px;
+}
+
+#task-c-error {
+    text-align: center;
+    margin: 0;
+    font-size: 15.5px;
+    padding-top: 10px;
+}
+
+#task-b-error {
+    text-align: center;
+    margin: 0;
+    font-size: 15.5px;
+}
+
+.button2 {
+    width: 230px;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #28d735;
+    border: 3px solid #28d735;
+    text-align: center;
+    color: #28d735;
+    height: 40px;
+}
+
+.generalblock {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.h1title {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-bottom: 10px;
+    margin: 10px auto;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.ititle {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-family: 'Scada', sans-serif;
+    margin-bottom: 50px;
+}
+
+.input1 {
+    width: 222px;
+    height: 30px;
+    background: #080c18;
+    border: 3px solid #2b9af1;
+    border-radius: 20px;
+    color: #2b9af1;
+    text-align: center;
+    outline: none;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked) + label::before {
+    border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked + label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+input:disabled {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background: none;
+
+}
+
+.btnall {
+    width: 230px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0px;
+}
+
+.button1 {
+    width: 230px;
+    height: 40px;
+    background: #080c18;
+    border: none;
+    outline: none;
+    color: #2b9af1;
+    font-size: 17px;
+    border-radius: 20px;
+    box-shadow: 0px;
+    box-shadow: 0px 0px 10px;
+    border: 3px solid;
+
+}
+
+.button1:hover {
+
+    background: none;
+
+    color: white;
+    transition: .4s;
+
+}
+
+.shag {
+    text-align: left;
+    color: white;
+    margin: 15px 0px;
+    font-family: 'Scada', sans-serif;
+}
+
+.centerblock {
+    max-width: 550px;
+    background: #0a0e1abf;
+    box-shadow: 0px 0px 100px 10px #010206;
+    border-radius: 26px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 100px;
+    border-image: linear-gradient(to bottom, transparent, #288ff2, transparent) 1 100%;
+    box-shadow: 0px 0px 80px 10px #1896ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    position: absolute;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+ul.dropdown {
+    background: #79aee4;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://grayscheme.com/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .centerblock {
+        max-width: none;
+    }
+
+    .movable-element {
+        display: none;
+    }
+
+    .movable-element2 {
+        display: none;
+    }
+
+    .movable-element3 {
+        display: none;
+    }
+
+    .movable-element4 {
+        display: none;
+    }
+}
+
+.movable-element {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+
+
+}
+
+.movable-element2 {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+
+
+}
+
+.movable-element3 {
+    position: absolute;
+    top: 70%;
+    right: 12%;
+
+
+}
+
+.movable-element4 {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+
+
+}
